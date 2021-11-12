@@ -46,8 +46,15 @@
   align-items: center;
 }
 
-@mixin ellipsis {
+@mixin ellipsis() {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@mixin absCenter() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
