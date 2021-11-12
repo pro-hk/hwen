@@ -1,2 +1,24 @@
 @import "vars";
 @import "mixins";
+
+#header {
+  .container {
+    width: 70%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #gnb {
+      > ul {
+        display: flex;
+        justify-content: space-between;
+        > li {
+          padding: 10px 50px;
+          a {
+          }
+        }
+      }
+    }
+  }
+}
