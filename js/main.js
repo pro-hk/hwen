@@ -1,14 +1,12 @@
-const mainVisualSlider = new Swiper("#mainVisual", {
-  autoplay: true,
+const mainVisualSlider = new Swiper("#businessVisual", {
   speed: 1000,
   effect: "fade",
-  loop: true,
   // navigation: {
   //   prevEl: "#mainVisual .prev",
   //   nextEl: "#mainVisual .next",
   // },
   pagination: {
-    el: "#mainVisual .pagination",
+    el: "#businessVisual .pagination",
     type: "bullets",
     clickable: "true",
   },

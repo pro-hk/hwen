@@ -1,5 +1,53 @@
-#header .container { width: 70%; height: 150px; margin: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+#header { width: 100%; color: #fff; font-size: 1.8rem; font-weight: 700; height: 350px; position: fixed; z-index: 100; }
 
-#header .container #gnb > ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+#header .container { padding: 0 50px; height: 100px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-#header .container #gnb > ul > li { padding: 10px 50px; }
+#header .container #logo { padding: 22px; }
+
+#header .container #gnb { text-align: center; }
+
+#header .container #gnb .list { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+#header .container #gnb .list > li > a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0 50px; height: 100px; -webkit-transition: 0.25s; transition: 0.25s; }
+
+#header .container #gnb .list > li > a:hover { color: #f60; border-bottom: 2px solid #f60; }
+
+#header .container #gnb .list > li > a:hover + .gnbSub { opacity: 1; }
+
+#header .container #gnb .list > li .gnbSub { color: #1c1c1c; opacity: 0; -webkit-transition: 0.25s; transition: 0.25s; }
+
+#header .container #gnb .list > li .gnbSub li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding: 20px; font-size: 1.4rem; -webkit-transition: 0.25s; transition: 0.25s; }
+
+#header .container #gnb .list > li .gnbSub li a:hover { color: #f60; }
+
+#header .container .etc { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+#header .container .etc button { color: #fff; font-size: 1.4rem; font-weight: 700; }
+
+#header .container .etc span { font-size: 40px; margin-left: 10px; }
+
+#footer { background-color: #000; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+#footer .logo { width: 15%; padding: 50px; }
+
+#footer .contents { width: 85%; color: #fff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; padding: 0 50px; }
+
+#footer .contents .site { padding: 30px 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; border-bottom: 1px solid #bbb; }
+
+#footer .contents .site .link { width: 30%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+#footer .contents .site .link a:first-child { color: #f60; }
+
+#footer .contents .site .family { width: 30%; padding: 20px; border: 1px solid #bbb; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+#footer .contents .copy { color: #bbb; padding: 30px 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+#footer .contents .copy .left { line-height: 1.5; }
+
+#footer .contents .copy .right { width: 30%; font-size: 2rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+
+#footer .contents .copy .right strong { margin-left: 20px; }
+
+#footer .contents .copy .right .sns ul { width: 20%; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+#footer .contents .copy .right .sns ul li { margin-left: 50px; }
