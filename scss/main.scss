@@ -85,7 +85,9 @@
           }
         }
         .right {
-          @include flexCenter();
+          a {
+            @include flexCenter();
+          }
           span {
             margin-right: 10px;
           }
@@ -102,39 +104,42 @@
         li {
           width: 25%;
           height: 100px;
-          background-repeat: no-repeat;
-          background-position: center;
-          border-right: 2px solid $border-color;
-          &:nth-child(1) {
-            background-image: url(../images/main/main_business_icon01.png);
-          }
-          &:nth-child(2) {
-            background-image: url(../images/main/main_business_icon02.png);
-          }
-          &:nth-child(3) {
-            background-image: url(../images/main/main_business_icon03.png);
-          }
-          &:nth-child(4) {
-            background-image: url(../images/main/main_business_icon04.png);
-            border-right: none;
-          }
-          > p {
-            padding-top: 100px;
-            text-align: center;
-            font-size: $medium-size;
-            font-weight: 700;
-          }
-          &:hover {
-            .hover {
-              transform: translateY(-20px);
-              z-index: 3;
-              opacity: 1;
-              h3,
-              p {
+          .box {
+            background-repeat: no-repeat;
+            background-position: center;
+            border-right: 2px solid $border-color;
+            > p {
+              padding-top: 100px;
+              text-align: center;
+              font-size: $medium-size;
+              font-weight: 700;
+            }
+            &:hover {
+              + .hover {
+                transform: translateY(-20px);
+                z-index: 3;
                 opacity: 1;
+                h3,
+                p {
+                  opacity: 1;
+                }
               }
             }
           }
+          .box01 {
+            background-image: url(../images/main/main_business_icon01.png);
+          }
+          .box02 {
+            background-image: url(../images/main/main_business_icon02.png);
+          }
+          .box03 {
+            background-image: url(../images/main/main_business_icon03.png);
+          }
+          .box04 {
+            background-image: url(../images/main/main_business_icon04.png);
+            border-right: none;
+          }
+
           .h01 {
             background-image: url(../images/main/main_business_img01.jpg);
           }
@@ -161,6 +166,7 @@
             opacity: 0;
             transition: 0.25s;
             z-index: -1;
+            pointer-events: none;
             h3 {
               font-size: $x-large-size;
             }
@@ -361,6 +367,7 @@
     > div {
       width: 50%;
       height: 250px;
+      background-size: 100%;
       background-position: center;
       background-repeat: no-repeat;
       object-fit: cover;

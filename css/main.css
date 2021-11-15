@@ -28,7 +28,7 @@
 
 #main .mainVisual .controll .container .center span { font-size: 6rem; }
 
-#main .mainVisual .controll .container .right { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+#main .mainVisual .controll .container .right a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 #main .mainVisual .controll .container .right span { margin-right: 10px; }
 
@@ -36,21 +36,23 @@
 
 #main #business .inner .list { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-#main #business .inner .list li { width: 25%; height: 100px; background-repeat: no-repeat; background-position: center; border-right: 2px solid #d9d9d9; }
+#main #business .inner .list li { width: 25%; height: 100px; }
 
-#main #business .inner .list li:nth-child(1) { background-image: url(../images/main/main_business_icon01.png); }
+#main #business .inner .list li .box { background-repeat: no-repeat; background-position: center; border-right: 2px solid #d9d9d9; }
 
-#main #business .inner .list li:nth-child(2) { background-image: url(../images/main/main_business_icon02.png); }
+#main #business .inner .list li .box > p { padding-top: 100px; text-align: center; font-size: 1.8rem; font-weight: 700; }
 
-#main #business .inner .list li:nth-child(3) { background-image: url(../images/main/main_business_icon03.png); }
+#main #business .inner .list li .box:hover + .hover { -webkit-transform: translateY(-20px); transform: translateY(-20px); z-index: 3; opacity: 1; }
 
-#main #business .inner .list li:nth-child(4) { background-image: url(../images/main/main_business_icon04.png); border-right: none; }
+#main #business .inner .list li .box:hover + .hover h3, #main #business .inner .list li .box:hover + .hover p { opacity: 1; }
 
-#main #business .inner .list li > p { padding-top: 100px; text-align: center; font-size: 1.8rem; font-weight: 700; }
+#main #business .inner .list li .box01 { background-image: url(../images/main/main_business_icon01.png); }
 
-#main #business .inner .list li:hover .hover { -webkit-transform: translateY(-20px); transform: translateY(-20px); z-index: 3; opacity: 1; }
+#main #business .inner .list li .box02 { background-image: url(../images/main/main_business_icon02.png); }
 
-#main #business .inner .list li:hover .hover h3, #main #business .inner .list li:hover .hover p { opacity: 1; }
+#main #business .inner .list li .box03 { background-image: url(../images/main/main_business_icon03.png); }
+
+#main #business .inner .list li .box04 { background-image: url(../images/main/main_business_icon04.png); border-right: none; }
 
 #main #business .inner .list li .h01 { background-image: url(../images/main/main_business_img01.jpg); }
 
@@ -60,7 +62,7 @@
 
 #main #business .inner .list li .h04 { background-image: url(../images/main/main_business_img04.jpg); }
 
-#main #business .inner .list li .hover { margin-top: -110px; text-align: center; -webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; height: 350px; background-position: center; background-repeat: no-repeat; -o-object-fit: cover; object-fit: cover; color: #fff; padding: 50px; opacity: 0; -webkit-transition: 0.25s; transition: 0.25s; z-index: -1; }
+#main #business .inner .list li .hover { margin-top: -110px; text-align: center; -webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; height: 350px; background-position: center; background-repeat: no-repeat; -o-object-fit: cover; object-fit: cover; color: #fff; padding: 50px; opacity: 0; -webkit-transition: 0.25s; transition: 0.25s; z-index: -1; pointer-events: none; }
 
 #main #business .inner .list li .hover h3 { font-size: 4.8rem; }
 
@@ -140,7 +142,7 @@
 
 #main #mainBanner { display: -webkit-box; display: -ms-flexbox; display: flex; color: #fff; position: relative; }
 
-#main #mainBanner > div { width: 50%; height: 250px; background-position: center; background-repeat: no-repeat; -o-object-fit: cover; object-fit: cover; position: relative; }
+#main #mainBanner > div { width: 50%; height: 250px; background-size: 100%; background-position: center; background-repeat: no-repeat; -o-object-fit: cover; object-fit: cover; position: relative; }
 
 #main #mainBanner > div h3 { font-size: 3.6rem; margin-bottom: 20px; }
 

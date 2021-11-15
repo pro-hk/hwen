@@ -1,20 +1,24 @@
 #header { width: 100%; color: #fff; font-size: 1.8rem; font-weight: 700; height: 350px; position: fixed; z-index: 100; }
 
-#header .container { padding: 0 50px; height: 100px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+#header .container { padding: 0 50px; height: 100px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; position: relative; }
 
 #header .container #logo { padding: 22px; }
 
-#header .container #gnb { text-align: center; }
+#header .container #gnb { position: absolute; width: 100%; height: 100px; text-align: center; }
 
-#header .container #gnb .list { display: -webkit-box; display: -ms-flexbox; display: flex; }
+#header .container #gnb .list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+#header .container #gnb .list > li:hover { background-color: #fff; }
+
+#header .container #gnb .list > li:hover > a { color: #f60; border-bottom: 2px solid #f60; }
+
+#header .container #gnb .list > li:hover .gnbSub { opacity: 1; }
 
 #header .container #gnb .list > li > a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0 50px; height: 100px; -webkit-transition: 0.25s; transition: 0.25s; }
 
-#header .container #gnb .list > li > a:hover { color: #f60; border-bottom: 2px solid #f60; }
-
-#header .container #gnb .list > li > a:hover + .gnbSub { opacity: 1; }
-
 #header .container #gnb .list > li .gnbSub { color: #1c1c1c; opacity: 0; -webkit-transition: 0.25s; transition: 0.25s; }
+
+#header .container #gnb .list > li .gnbSub li.master { color: #f60; }
 
 #header .container #gnb .list > li .gnbSub li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding: 20px; font-size: 1.4rem; -webkit-transition: 0.25s; transition: 0.25s; }
 

@@ -14,32 +14,43 @@
     height: 100px;
     display: flex;
     justify-content: space-between;
+    position: relative;
     #logo {
       padding: 22px;
     }
     #gnb {
+      position: absolute;
+      width: 100%;
+      height: 100px;
       text-align: center;
       .list {
         display: flex;
+        justify-content: center;
         > li {
+          &:hover {
+            > a {
+              color: $hover-color;
+              border-bottom: 2px solid $hover-color;
+            }
+            .gnbSub {
+              opacity: 1;
+            }
+            background-color: $white-color;
+          }
           > a {
             @include flexCenter;
             padding: 0 50px;
             height: 100px;
             transition: 0.25s;
-            &:hover {
-              color: $hover-color;
-              border-bottom: 2px solid $hover-color;
-              + .gnbSub {
-                opacity: 1;
-              }
-            }
           }
           .gnbSub {
             color: $main-color;
             opacity: 0;
             transition: 0.25s;
             li {
+              &.master {
+                color: $hover-color;
+              }
               a {
                 display: flex;
                 justify-content: center;
