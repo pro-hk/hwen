@@ -21,3 +21,12 @@ const productSlider = new Swiper("#product .list", {
     nextEl: "#product .next",
   },
 });
+
+const header = $("#header");
+const gnbList = $("#gnb .list > li");
+gnbList.on("mouseenter", function () {
+  header.addClass("on");
+});
+gnbList.on("mouseleave", function () {
+  header.removeClass("on");
+});
