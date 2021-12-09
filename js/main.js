@@ -27,6 +27,32 @@ const gnbList = $("#gnb .list > li");
 gnbList.on("mouseenter", function () {
   header.addClass("on");
 });
-gnbList.on("mouseleave", function () {
+header.on("mouseleave", function () {
   header.removeClass("on");
 });
+
+const menuOn = header.find(".etc .menuOn");
+const menuOff = header.find(".etc .menuOff");
+
+menuOn.on("click", function () {
+  header.removeClass("on");
+  header.addClass("menu");
+  // gnbList 이벤트 실행이 끝난다
+});
+menuOff.on("click", function () {
+  header.removeClass("menu");
+  header.removeClass("on");
+});
+
+// $(window).on("scroll", function () {
+//   const st = $(window).scrollTop();
+//   if (st > 0) {
+//     header.hide();
+//     return (st01 = st);
+//   }
+//   if (st01 > st) {
+//     header.show();
+//   }
+//   console.log(st);
+//   console.log(st01);
+// });
