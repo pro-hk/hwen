@@ -24,15 +24,17 @@ const productSlider = new Swiper("#product .list", {
 
 const header = $("#header");
 const gnbList = $("#gnb .list > li");
+const menuOn = header.find(".etc .menuOn");
+const menuOff = header.find(".etc .menuOff");
+
 gnbList.on("mouseenter", function () {
-  header.addClass("on");
+  if (!header.hasClass("menu")) {
+    header.addClass("on");
+  }
 });
 header.on("mouseleave", function () {
   header.removeClass("on");
 });
-
-const menuOn = header.find(".etc .menuOn");
-const menuOff = header.find(".etc .menuOff");
 
 menuOn.on("click", function () {
   header.removeClass("on");
@@ -41,7 +43,6 @@ menuOn.on("click", function () {
 });
 menuOff.on("click", function () {
   header.removeClass("menu");
-  header.removeClass("on");
 });
 
 // $(window).on("scroll", function () {
